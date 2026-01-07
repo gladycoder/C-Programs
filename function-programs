@@ -1,4 +1,5 @@
 program-1:
+**********
 
 #include <iostream>
 using namespace std;
@@ -16,3 +17,81 @@ int main() {
     return 0;
 }
 
+****************************************************************************************
+program-2:
+**********
+
+#include <iostream>
+using namespace std;
+
+float calculator(float fvalue,float svalue,char symbol){
+    float total;
+    if(symbol ==  '+'){
+        total = fvalue + svalue;
+    }
+    else if (symbol == '-'){
+        total = fvalue - svalue;
+    }
+    else if(symbol == '*'){
+        total = fvalue * svalue;
+    }
+    else if(symbol == '/'){
+        total = fvalue / svalue;
+    }
+    
+    return total;
+}
+
+int main() {
+    char symbol = '$';
+   float result;
+   if(symbol != '+' || '-' || '*' || '/'){
+       cout<<"Invalid Symbol";
+   }
+   else{
+       result = calculator(5.5,5,symbol);
+       cout << result;
+   }
+   
+
+    return 0;
+}
+
+****************************************************************************************
+
+program -3:
+***********
+
+#include <iostream>
+using namespace std;
+
+float calculator(float fvalue,float svalue,char symbol){
+    float total;
+    if(symbol ==  '+'){
+        total = fvalue + svalue;
+    }
+    else if (symbol == '-'){
+        total = fvalue - svalue;
+    }
+    else if(symbol == '*'){
+        total = fvalue * svalue;
+    }
+    else if(symbol == '/'){
+        total = fvalue / svalue;
+    }
+    
+    return total;
+}
+
+int main() {
+    char symbol = '+';
+   float result;
+   if(symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/'){ 
+       result = calculator(5.5,0.5,symbol);
+       cout << result;
+   }
+   else{
+       cout<<"Invalid Symbol";
+   }
+    return 0;
+}
