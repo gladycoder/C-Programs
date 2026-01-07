@@ -1,0 +1,15 @@
+program-1:
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+string sentence = "ABC";
+
+for(int i = sentence.length(); i>=0; i--){
+    cout << sentence[i];
+}
+
+    return 0;
+}
