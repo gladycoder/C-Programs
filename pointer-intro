@@ -23,3 +23,51 @@ cout << "Poniter Variable with value : "<< *pointerVariable<<"\n";
 
 return 0;
 }
+
+
+program - 2:
+************
+
+#include <iostream>
+using namespace std;
+int main() {
+    int *pointer;
+    int num[5]={10,20,30,40,50};
+    pointer = num;
+    
+    cout << num[0] <<" = " << &num[0] <<"\n";
+    cout <<"pointer = " << pointer <<"\n";
+    
+    cout << num[2] <<" = " << &num[2] <<"\n";
+    cout <<"pointer+2 = " << pointer+2 <<"\n";
+    
+    cout <<"*pointer+2 = " << *pointer+2 <<"\n";
+    
+    cout <<" *(pointer+2) = " << *(pointer+2) <<"\n";
+    
+    cout <<"******************************"<<"\n";
+    
+    for(int i =0;i<5;i++){
+        cout << "POINTER+"<<i <<" = " << pointer+i << " = " << *(pointer+i) <<"\n";
+    }
+    
+    return 0;
+}
+
+output:
+*******
+10 = 0x7ffe11e961d0
+pointer = 0x7ffe11e961d0
+30 = 0x7ffe11e961d8
+pointer+2 = 0x7ffe11e961d8
+*pointer+2 = 12
+ *(pointer+2) = 30
+******************************
+POINTER+0 = 0x7ffe11e961d0 = 10
+POINTER+1 = 0x7ffe11e961d4 = 20
+POINTER+2 = 0x7ffe11e961d8 = 30
+POINTER+3 = 0x7ffe11e961dc = 40
+POINTER+4 = 0x7ffe11e961e0 = 50
+
+
+
