@@ -1,0 +1,25 @@
+Program-1:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int normalVariable = 77;
+//normalVariable = 200;
+int *pointerVariable = &normalVariable;
+*pointerVariable = 200;
+
+
+cout << "Normal Variable : "<< normalVariable<<"\n";
+cout << "Poniter Variable with address : "<< pointerVariable<<"\n";
+cout << "Poniter Variable with value : "<< *pointerVariable<<"\n";
+
+
+//  pointervariable -> 0x7ffd3a1feec4
+// *pointerVariable -> 0x7ffd3a1feec4  -> 200
+
+
+return 0;
+}
